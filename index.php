@@ -41,5 +41,6 @@
     </div>
 
     <script src="<?= site_url(); ?>javascript/bootstrap.min.js"></script>
+    <script src="<?= site_url(); ?>javascript/script.js"></script>
 </body>
 </html>
