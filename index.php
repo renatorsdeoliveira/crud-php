@@ -14,26 +14,26 @@
     <div class="container">
         <div class="row">
             <div class="offset-md-3 col-md-6 ">
-               <form action="" method="post">
+               <form action="" method="post" class="formulario">
                     <div class="form-group">
-                        <input class="form-control"  type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                        <input class="form-control lateral"  type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
                     </div>
                     <div class="form-group">
-                        <input class="form-control"  type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                        <input class="form-control lateral"  type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <input class="form-control"  type="text" name="profissao" id="profissao" placeholder="Digite sua profissão" required>
+                            <input class="form-control baixo"  type="text" name="profissao" id="profissao" placeholder="Digite sua profissão" required>
                         </div>
                         <div class="form-group col-md-6">
-                            <input class="form-control"  type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" required>
+                            <input class="form-control baixo"  type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <input type="file" class="form-control-file" id="arquivo">
                     </div>
                     <div class="text-center">
-                    <button type="submit" class="btn btn-primary">enviar</button>
+                        <button type="submit" class="btn btn-primary btn-submit ">ENVIAR</button>
                     </div>
                </form>
             </div>

@@ -6,3 +6,59 @@
 	box-sizing: border-box;
 	outline: none;
 }
+body{
+	background: rgb(6,96,113);
+	background: linear-gradient(180deg, rgba(6,96,113,1) 0%, rgba(40,156,180,1) 61%, rgba(109,223,246,1) 100%) repeat-x;
+	height: 100vh;
+}
+.formulario{
+	background-color: #ffffff;
+	border-radius: 7px;
+	padding:  50px 40px 40px;
+	overflow: hidden;
+	margin-top: 80px;
+	animation-name: fade;
+	animation-duration: 1s;
+}
+.formulario .lateral{
+	animation-name: entrada-lateral;
+	animation-duration: 1s;
+}
+.formulario .baixo{
+	animation-name: entrada-baixo;
+	animation-duration: 1s;
+}
+.formulario .btn-submit{
+	animation: entrada-lateral 1s;
+	animation-fill-mode: backwards;
+	
+}
+@keyframes fade{
+	from {
+		opacity: 0;
+		transform: scale(0.8);
+	}to{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@keyframes entrada-lateral{
+	from {
+		opacity: 0;
+		transform: translateX(-35%);
+	}to{
+		opacity: 1;
+		transform: translateX(0%);
+
+	}
+}
+@keyframes entrada-baixo{
+	from {
+		opacity: 0;
+		transform: translateY(35%);
+	}to{
+		opacity: 1;
+		transform: translateY(0%);
+
+	}
+}
