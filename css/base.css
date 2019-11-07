@@ -29,9 +29,7 @@ body{
 	animation-duration: 1s;
 }
 .formulario .btn-submit{
-	animation: entrada-lateral 1s;
-	animation-fill-mode: backwards;
-	
+	animation: entrada-lateral 1s;	
 }
 @keyframes fade{
 	from {
