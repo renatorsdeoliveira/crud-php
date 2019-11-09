@@ -16,16 +16,20 @@
        $telefone = $_POST['telefone'];
     }
 
+
     $bd = new banco();
     $link = $bd->conecta_banco();
+    $erro =  '';
 
-    $sql = "INSERT INTO usuarios(nome, email, telefone, profissao)VALUES('$nome','$email','$telefone', '$profissao')";
 
-
+    $sql = "INSERT INTO usuaris(nome, email, telefone, profissao)VALUES('$nome','$email','$telefone', '$profissao')";
     if(mysqli_query($link, $sql)){
-        echo "Usuario registrado com sucesso";
+        $erro = "Usuario registrado com sucesso";
+        echo $erro;
     }else{
-        echo "Erro ao registrar o usuario";
+        $erro = "Erro ao registrar o usuario";
+        echo $erro;
     }
+    
 
 ?>
