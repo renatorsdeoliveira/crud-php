@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="offset-md-3 col-md-6 ">
-               <form action="" method="post" class="formulario">
+               <form action="registros.php" method="post" class="formulario">
                     <div class="form-group">
                         <input class="form-control lateral"  type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
                     </div>
@@ -29,13 +29,41 @@
                             <input class="form-control baixo"  type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" required>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <input type="file" class="form-control-file" id="arquivo">
-                    </div>
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary btn-submit ">ENVIAR</button>
+                        <button type="submit" class="btn btn-primary btn-submit" id="submit" >ENVIAR</button>
                     </div>
                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                
+
+                <table class="table table-striped white">
+                    <thead>
+                        <tr>
+                        <th class="border-top-0 text-light bg-dark" scope="col">Nome</th>
+                        <th class="border-top-0 text-light bg-dark" scope="col">E-mail</th>
+                        <th class="border-top-0 text-light bg-dark" scope="col">Profissão</th>
+                        <th class="border-top-0 text-light bg-dark" scope="col">Telefone</th>
+                        <th class="border-top-0 text-light bg-dark" scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                        
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
