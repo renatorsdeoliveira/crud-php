@@ -11,6 +11,10 @@ body{
 	background: linear-gradient(180deg, rgba(6,96,113,1) 0%, rgba(40,156,180,1) 61%, rgba(109,223,246,1) 100%) repeat-x;
 	height: 100vh;
 }
+.white{
+	background-color: #ffffff;
+    border-radius: 2px 2px 5px 10px;
+}
 .formulario{
 	background-color: #ffffff;
 	border-radius: 7px;
@@ -34,10 +38,10 @@ body{
 .formulario .btn-submit{
 	animation: entrada-lateral 1s;	
 }
-.form-hide{
+/* .form-hide{
 	animation: down 500ms;
 	animation-fill-mode: forwards;
-}
+} */
 @keyframes fade{
 	from {
 		opacity: 0;
@@ -64,13 +68,13 @@ body{
 		opacity: 1;
 		transform: translateY(0%);
 
-	}
+	 }
 }
-@keyframes down {
+/*@keyframes down {
 	from {
 		transform: translateY(0);
 	}to{
 		transform: translateY(100vh);
 
 	}
-}
+} */
