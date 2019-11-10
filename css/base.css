@@ -81,4 +81,6 @@ body{
 .dados{
 	margin-top: 70px;
 	margin-bottom: 50px;
+	animation-name: entrada-baixo;
+	animation-duration: 1s;
 }
