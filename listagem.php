@@ -7,7 +7,7 @@
     
 
     //Listar usuarios na tela
-    $sql = "SELECT * FROM usuarios";
+    $sql = "SELECT * FROM usuarios ORDER BY id DESC ";
     $resultado_id = mysqli_query($link, $sql);
     
   
