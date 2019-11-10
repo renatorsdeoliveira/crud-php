@@ -28,7 +28,7 @@
 
     $sql = "INSERT INTO usuarios(nome, email, telefone, profissao)VALUES('$nome','$email','$telefone', '$profissao')";
     if(mysqli_query($link, $sql)){
-        header('Location: index.php');
+        header('Location: ../index.php');
         die();
     }else{
         $erro = "Erro ao registrar o usuario";

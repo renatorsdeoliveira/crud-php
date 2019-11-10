@@ -1,21 +1,10 @@
-<?php include_once('config.php'); ?>
-<?php include_once('listagem.php'); ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="<?= site_url() ;?>css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?= site_url() ;?>css/base.css">
-    <title>Crud PHP</title>
-</head>
-<body>
+<?php include_once('conteudo-fixo/header.php'); ?>
+<?php include_once('models/listagem.php'); ?>
 
     <div class="container">
         <div class="row">
             <div class="offset-md-3 col-md-6">
-               <form action="registros.php" method="post" class="formulario">
+               <form action="models/registros.php" method="post" class="formulario">
                     <div class="form-group">
                         <input class="form-control lateral"  type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
                     </div>
@@ -88,8 +77,7 @@
             </div>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="<?= site_url(); ?>javascript/bootstrap.min.js"></script>
-    <script src="<?= site_url(); ?>javascript/script.js"></script>
-</body>
-</html>
+
+
+    <?php include_once('conteudo-fixo/footer.php'); ?>
+  
