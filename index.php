@@ -1,4 +1,5 @@
 <?php include_once('config.php'); ?>
+<?php include_once('listagem.php'); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,7 +14,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="offset-md-3 col-md-6 ">
+            <div class="offset-md-3 col-md-6">
                <form action="registros.php" method="post" class="formulario">
                     <div class="form-group">
                         <input class="form-control lateral"  type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
@@ -37,33 +38,42 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container dados">
         <div class="row">
             <div class="col">
-                
 
-                <table class="table table-striped white">
+                <table class="table table-striped white text-center">
                     <thead>
                         <tr>
+                        <th class="border-top-0 text-light bg-dark" scope="col">Id</th>
                         <th class="border-top-0 text-light bg-dark" scope="col">Nome</th>
                         <th class="border-top-0 text-light bg-dark" scope="col">E-mail</th>
                         <th class="border-top-0 text-light bg-dark" scope="col">Profissão</th>
                         <th class="border-top-0 text-light bg-dark" scope="col">Telefone</th>
-                        <th class="border-top-0 text-light bg-dark" scope="col">Status</th>
+                        <th class="border-top-0 text-light bg-dark" scope="col">Telefone</th>
+                        <th class="border-top-0 text-light bg-dark" scope="col">Data</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                        
+
+                    <tbody>                    
+                        <?php while($dados_usuario = mysqli_fetch_array($resultado_id, MYSQLI_ASSOC)){ ?>
+                            <tr> 
+                                <td><?php echo $dados_usuario['id']; ?></td>
+                                <td><?php echo $dados_usuario['nome']; ?></td>
+                                <td><?php echo $dados_usuario['email']; ?></td>
+                                <td><?php echo $dados_usuario['profissao']; ?></td>
+                                <td><?php echo $dados_usuario['telefone']; ?></td>
+                                <td><?php echo $dados_usuario['data']; ?></td>
+                                <td>
+                                    <!-- <button type="button" class="btn btn-sm btn-primary">Visualizar</button> -->
+                                    <button type="button" class="btn btn-sm btn-warning">Editar</button>
+                                    <button type="button" class="btn btn-sm btn-danger">Apagar</button>
+                                </td>
+                            </tr>
+                        <?php }; ?>
                     </tbody>
                 </table>
+
             </div>
         </div>
     </div>

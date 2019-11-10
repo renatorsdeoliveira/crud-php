@@ -22,10 +22,9 @@
     $erro =  '';
 
 
-    $sql = "INSERT INTO usuaris(nome, email, telefone, profissao)VALUES('$nome','$email','$telefone', '$profissao')";
+    $sql = "INSERT INTO usuarios(nome, email, telefone, profissao)VALUES('$nome','$email','$telefone', '$profissao')";
     if(mysqli_query($link, $sql)){
-        $erro = "Usuario registrado com sucesso";
-        echo $erro;
+        header('Location: index.php');
     }else{
         $erro = "Erro ao registrar o usuario";
         echo $erro;

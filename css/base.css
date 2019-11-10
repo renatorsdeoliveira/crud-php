@@ -9,7 +9,7 @@
 body{
 	background: rgb(6,96,113);
 	background: linear-gradient(180deg, rgba(6,96,113,1) 0%, rgba(40,156,180,1) 61%, rgba(109,223,246,1) 100%) repeat-x;
-	height: 100vh;
+	/* height: 100vh; */
 }
 .white{
 	background-color: #ffffff;
@@ -78,3 +78,7 @@ body{
 
 	}
 } */
+.dados{
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
