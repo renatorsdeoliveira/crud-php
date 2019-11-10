@@ -57,17 +57,28 @@
 
                     <tbody>                    
                         <?php while($dados_usuario = mysqli_fetch_array($resultado_id, MYSQLI_ASSOC)){ ?>
-                            <tr> 
-                                <td><?php echo $dados_usuario['id']; ?></td>
-                                <td><?php echo $dados_usuario['nome']; ?></td>
-                                <td><?php echo $dados_usuario['email']; ?></td>
-                                <td><?php echo $dados_usuario['profissao']; ?></td>
-                                <td><?php echo $dados_usuario['telefone']; ?></td>
-                                <td><?php echo $dados_usuario['data']; ?></td>
+                            <tr>
+                                <?php 
+                                    $id = $dados_usuario['id'];
+                                    $nome = $dados_usuario['nome']; 
+                                    $email = $dados_usuario['email'];
+                                    $profissao = $dados_usuario['profissao'];
+                                    $telefone = $dados_usuario['telefone'];
+                                    $data  = $dados_usuario['data'];
+                                ?>
+
+                                <td><?= $id;  ?></td>
+                                <td><?= $nome; ?></td>
+                                <td><?= $email; ?></td>
+                                <td><?= $profissao; ?></td>
+                                <td><?= $telefone; ?></td>
+                                <td><?= $data; ?></td>
                                 <td>
                                     <!-- <button type="button" class="btn btn-sm btn-primary">Visualizar</button> -->
-                                    <button type="button" class="btn btn-sm btn-warning">Editar</button>
+                                    <button type="button" href="uploud.php?id='.$id.'" class="btn btn-sm btn-warning"><a href="uploud.php?id=<?=$id?>">Editar</button>
                                     <button type="button" class="btn btn-sm btn-danger">Apagar</button>
+                                   
+                               
                                 </td>
                             </tr>
                         <?php }; ?>
@@ -77,7 +88,7 @@
             </div>
         </div>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="<?= site_url(); ?>javascript/bootstrap.min.js"></script>
     <script src="<?= site_url(); ?>javascript/script.js"></script>
 </body>
