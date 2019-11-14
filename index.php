@@ -1,6 +1,9 @@
-<?php include_once('conteudo-fixo/header.php'); ?>
-<?php include_once('models/listagem.php'); ?>
+<?php 
+    include_once('conteudo-fixo/header.php'); 
+    include_once('models/listagem.php'); 
+?>
 
+<div class="conteudo">
     <div class="container">
         <div class="row">
             <div class="offset-md-3 col-md-6">
@@ -64,7 +67,7 @@
                                 <td><?= $data; ?></td>
                                 <td>
                                     <!-- <button type="button" class="btn btn-sm btn-primary">Visualizar</button> -->
-                                    <button type="button" href="uploud.php?id='.$id.'" class="btn btn-sm btn-warning"><a href="uploud.php?id=<?=$id?>">Editar</button>
+                                    <button type="button" href="update.php?id='.$id.'" class="btn btn-sm btn-warning"><a href="editar.php?id=<?=$id?>">Editar</button>
                                     <button type="button" class="btn btn-sm btn-danger">Apagar</button>
                                    
                                
@@ -77,7 +80,6 @@
             </div>
         </div>
     </div>
-
-
+</div>
     <?php include_once('conteudo-fixo/footer.php'); ?>
   
