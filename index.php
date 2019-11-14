@@ -67,10 +67,10 @@
                                 <td><?= $data; ?></td>
                                 <td>
                                     <!-- <button type="button" class="btn btn-sm btn-primary">Visualizar</button> -->
-                                    <button type="button" href="update.php?id='.$id.'" class="btn btn-sm btn-warning"><a href="editar.php?id=<?=$id?>">Editar</button>
-                                    <button type="button" class="btn btn-sm btn-danger">Apagar</button>
-                                   
-                               
+                                    <button type="button" class="btn btn-sm btn-warning"><a href="editar.php?id=<?=$id?>">Editar</a></button>
+                                    <button type="button" class="btn btn-sm btn-danger"><a href="models/delete.php?id=<?=$id?>">Apagar</a></button>
+                                
+                            
                                 </td>
                             </tr>
                         <?php }; ?>
@@ -80,6 +80,7 @@
             </div>
         </div>
     </div>
+  
 </div>
     <?php include_once('conteudo-fixo/footer.php'); ?>
   
