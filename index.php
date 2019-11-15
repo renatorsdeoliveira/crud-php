@@ -66,7 +66,8 @@
                                         <td class="align-middle"><?= $email; ?></td>
                                         <td class="align-middle"><?= $profissao; ?></td>
                                         <td class="align-middle"><?= $telefone; ?></td>
-                                        <td class="align-middle"><?= $data; ?></td>
+                                        <?php $dataFormatada = (new DateTime($data))->format('d/m/Y H:i:s');?>
+                                        <td class="align-middle"><?= $dataFormatada; ?></td>
                                         <td class="align-middle">
                                             <!-- <button type="button" class="btn btn-sm btn-primary">Visualizar</button> -->
                                             <a href="editar.php?id=<?=$id?>" class="btn btn-sm btn-warning">
