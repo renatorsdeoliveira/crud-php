@@ -17,7 +17,7 @@
     }
     if (isset($_POST['telefone'])){
         // $telefone = $_POST['telefone'];
-        $telefone = filter_input(INPUT_POST, 'telefone', FILTER_SANITIZE_NUMBER_INT);
+        $telefone = filter_input(INPUT_POST, 'telefone', FILTER_SANITIZE_STRING);
     }
 
 

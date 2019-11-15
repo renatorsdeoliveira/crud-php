@@ -27,7 +27,7 @@
                                         <input class="form-control baixo"  type="text"  value="<?= $dados_usuario['profissao'] ;?>" name="profissao" id="profissao" placeholder="Digite sua profissão" required>
                                     </div>
                                     <div class="form-group col-md-6">
-                                        <input class="form-control baixo"  type="tel"  value="<?= $dados_usuario['telefone'] ;?>" name="telefone" id="telefone" maxlength="11" placeholder="Digite seu telefone" required>
+                                        <input class="form-control baixo"  type="tel"  value="<?= $dados_usuario['telefone'] ;?>" name="telefone" id="telefone" maxlength="15" placeholder="Digite seu telefone" required>
                                     </div>
                                 </div>
                                 <div class="text-center">

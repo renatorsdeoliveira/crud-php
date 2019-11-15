@@ -20,11 +20,11 @@
                                 <input class="form-control baixo"  type="text" name="profissao" id="profissao" placeholder="Digite sua profissão" required>
                             </div>
                             <div class="form-group col-md-6">
-                                <input class="form-control baixo"  type="tel" name="telefone" id="telefone" maxlength="11" placeholder="Digite seu telefone" required>
+                                <input class="form-control baixo"  type="tel" name="telefone" id="telefone" maxlength="15" placeholder="Digite seu telefone" required >
                             </div>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-submit" id="submit" >ENVIAR</button>
+                            <button type="submit" class="btn btn-primary btn-submit" id="submit">CADASTRAR</button>
                         </div>
                 </form>
                 </div>
