@@ -6,6 +6,7 @@
     <div class="conteudo">
         <div class="container">
             <div class="row">
+           
                 <div class="offset-md-3 col-md-6">
                 <form action="models/registros.php" method="post" class="formulario">
                         <div class="form-group">
@@ -60,16 +61,18 @@
                                             $data  = $dados_usuario['data'];
                                         ?>
 
-                                        <td><?= $id;  ?></td>
-                                        <td><?= $nome; ?></td>
-                                        <td><?= $email; ?></td>
-                                        <td><?= $profissao; ?></td>
-                                        <td><?= $telefone; ?></td>
-                                        <td><?= $data; ?></td>
-                                        <td>
+                                        <td class="align-middle"><?= $id;  ?></td>
+                                        <td class="align-middle"><?= $nome; ?></td>
+                                        <td class="align-middle"><?= $email; ?></td>
+                                        <td class="align-middle"><?= $profissao; ?></td>
+                                        <td class="align-middle"><?= $telefone; ?></td>
+                                        <td class="align-middle"><?= $data; ?></td>
+                                        <td class="align-middle">
                                             <!-- <button type="button" class="btn btn-sm btn-primary">Visualizar</button> -->
-                                            <button type="button" class="btn btn-sm btn-warning"><a href="editar.php?id=<?=$id?>">Editar</a></button>
-                                            <button type="button" class="btn btn-sm btn-danger"><a href="models/delete.php?id=<?=$id?>">Apagar</a></button>
+                                            <a href="editar.php?id=<?=$id?>" class="btn btn-sm btn-warning">
+                                                <i class="fa fa fa-pencil  editar"  aria-hidden="true"></i>
+                                            </a>
+                                            <a href="models/delete.php?id=<?=$id?>"><button type="button" class="btn btn-sm btn-danger"><i class="fa fa-trash-o fa-2x excluir" aria-hidden="true"></i></i></button></a>
                                         
                                     
                                         </td>

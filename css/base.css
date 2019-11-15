@@ -16,6 +16,27 @@
 	background-color: #ffffff;
     border-radius: 2px 2px 5px 10px;
 }
+.excluir, .editar{
+	color: black;
+	font-size: 1.7em;
+}
+.excluir:hover, .editar:hover{
+	color: #ffffff;
+	transition: 0.3s;
+}
+.vlt{
+	text-transform: uppercase;
+    padding-left: 12px;
+	padding-right: 15px;
+	position: relative;
+    top: 20px;
+}
+.vlt i {
+	margin-right: 7px;
+}
+.btnEditSalvar{
+	min-width: 108px;
+}
 .formulario{
 	background-color: #ffffff;
 	border-radius: 7px;

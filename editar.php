@@ -6,8 +6,13 @@
 ?>
     <div class="conteudo">
         <div class="container">
+            <a href="<?= site_url(); ?>" class="btn btn-dark btn-sm vlt">
+                <i class="fa fa-long-arrow-left" aria-hidden="true"></i>Voltar
+            </a>
                 <div class="row">
+              
                     <div class="offset-md-3 col-md-6">
+                       
                         <?php foreach ($resultado_id as $dados_usuario){  ?>
                             <form action="models/update.php" method="post" class="formulario">
                                 <div class="form-group">
@@ -26,8 +31,8 @@
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <input  type="submit" class="btn btn-primary" value="SALVAR" name="btnUpdate"> 
-                                    <a href="http://localhost/crud-php/" class="btn btn-primary "> CANCELAR</a>
+                                    <input  type="submit" class="btn btn-info btnEditSalvar" value="SALVAR" name="btnUpdate"> 
+                                    <a href="<?= site_url(); ?>" class="btn btn-danger"> CANCELAR</a>
                                 </div>
                             </form>
                         <?php } ?>
