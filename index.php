@@ -50,7 +50,8 @@
                             </thead>
 
                             <tbody>                    
-                                <?php while($dados_usuario = mysqli_fetch_array($resultado_id, MYSQLI_ASSOC)){ ?>
+                                <?php $i = 1;  while($dados_usuario = mysqli_fetch_array($resultado_id, MYSQLI_ASSOC)){ ?>
+                                 
                                     <tr>
                                         <?php 
                                             $id = $dados_usuario['id'];
@@ -61,7 +62,7 @@
                                             $data  = $dados_usuario['data'];
                                         ?>
 
-                                        <td class="align-middle"><?= $id;  ?></td>
+                                        <td class="align-middle"><?= $i; ?></td>
                                         <td class="align-middle"><?= $nome; ?></td>
                                         <td class="align-middle"><?= $email; ?></td>
                                         <td class="align-middle"><?= $profissao; ?></td>
@@ -78,7 +79,8 @@
                                     
                                         </td>
                                     </tr>
-                                <?php }; ?>
+                                   
+                                <?php $i++; } ?>
                             </tbody>
                         </table>
 
