@@ -42,7 +42,7 @@
         <?php if(mysqli_num_rows($resultado_id) != 0) { ?>
             <div class="container dados">
                 <div class="row">
-                    <div class="col">
+                    <div class="col mob">
 
                         <table class="table table-striped white text-center">
                             <thead>

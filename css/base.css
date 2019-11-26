@@ -109,3 +109,26 @@
 	animation-name: entrada-baixo;
 	animation-duration: 1s;
 }
+@media (max-width: 770px) {
+	.formulario{
+		padding: 50px 27px 40px;
+	}
+	.btn-sm{
+		margin: 3px;
+	}
+	.dados{
+		max-width: 90%;
+	}
+	.dados .mob{
+		overflow: auto;
+		padding: 0;
+	}
+	.dados .mob::-webkit-scrollbar {
+		width: 7px;
+		height: 3px;
+	}
+	.dados .mob::-webkit-scrollbar-thumb{
+		background: #076273;
+			
+	}
+}
