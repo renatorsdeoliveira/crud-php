@@ -4,6 +4,6 @@
     <script src="<?= site_url(); ?>javascript/bootstrap.min.js"></script>
     <script src="<?= site_url(); ?>javascript/jquery.maskedinput.min.js"></script>
     <script src="<?= site_url(); ?>javascript/jquery.multi-mask.js"></script>   
-    <script src="<?= site_url(); ?>javascript/script.js"></script>
+    <script src="<?= site_url(); ?>javascript/script.js?<?php echo date('His'); ?>"></script>
 </body>
 </html>
