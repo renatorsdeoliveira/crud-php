@@ -1,6 +1,9 @@
 <?php 
+
+    $erro_email = isset($_GET['email_erro']) ? $_GET['email_erro'] : 0;
     include_once('conteudo-fixo/header.php'); 
     include_once('models/listagem.php'); 
+    
 ?>
 
     <div class="conteudo">
@@ -13,7 +16,12 @@
                             <input class="form-control lateral"  type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
                         </div>
                         <div class="form-group">
-                            <input class="form-control lateral"  type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                            <input class="form-control lateral <?= $erro_email == 1 ? 'erro' : 0; ?>"  type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                            <?php
+                                if($erro_email == 1){
+                                    echo '<font color="#ff0000" >E-mail já existe</font>';
+                                }
+						    ?>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-6">

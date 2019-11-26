@@ -24,6 +24,9 @@
 	color: #ffffff;
 	transition: 0.3s;
 }
+.erro{
+	border: 1px solid #ff0000;
+}
 .vlt{
 	text-transform: uppercase;
     padding-left: 12px;

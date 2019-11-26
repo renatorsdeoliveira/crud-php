@@ -24,16 +24,35 @@
     $bd = new banco();
     $link = $bd->conecta_banco();
     $erro =  '';
+    $email_existe = '';
 
-
-    $sql = "INSERT INTO usuarios(nome, email, telefone, profissao)VALUES('$nome','$email','$telefone', '$profissao')";
-    if(mysqli_query($link, $sql)){
-        header('Location: ../index.php');
-        die();
+    //verificação para ver se existe emails iguais no banco
+    $sql = "SELECT * FROM  usuarios WHERE email = '$email'";
+    if($resultoEmail = mysqli_query($link, $sql)){
+        $dados_usuario = mysqli_fetch_array($resultoEmail, MYSQLI_ASSOC);
+        if($dados_usuario['email']){
+            $email_existe = true;
+        }
     }else{
-        $erro = "Erro ao registrar o usuario";
-        echo $erro;
+        echo "Aconteceu um erro ao tentar localizar o E-mail";
     }
+
+    $retorno_get_existe = ''; 
+    if($email_existe){
+        $retorno_get_existe .= 'email_erro=1'; 
+        header('Location: http://localhost/crud-php?'.$retorno_get_existe);
+    }else{
+        $sql = "INSERT INTO usuarios(nome, email, telefone, profissao)VALUES('$nome','$email','$telefone', '$profissao')";
+        if(mysqli_query($link, $sql)){
+            header('Location: http://localhost/crud-php');
+            die();
+        }else{
+            $erro = "Erro ao registrar o usuario";
+            echo $erro;
+        }
+    }
+
+  
     
 
 ?>
