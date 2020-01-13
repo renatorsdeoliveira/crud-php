@@ -40,11 +40,11 @@
     $retorno_get_existe = ''; 
     if($email_existe){
         $retorno_get_existe .= 'email_erro=1'; 
-        header('Location: http://localhost/crud-php?'.$retorno_get_existe);
+        header('Location: ../?'.$retorno_get_existe);
     }else{
         $sql = "INSERT INTO usuarios(nome, email, telefone, profissao)VALUES('$nome','$email','$telefone', '$profissao')";
         if(mysqli_query($link, $sql)){
-            header('Location: http://localhost/crud-php');
+            header('Location: ../');
             die();
         }else{
             $erro = "Erro ao registrar o usuario";

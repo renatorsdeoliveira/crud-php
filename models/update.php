@@ -24,7 +24,7 @@
         $sql = "UPDATE usuarios SET nome='$nome', email='$email',  profissao='$profissao', telefone='$telefone', data=NOW() WHERE id='$idUpdate' ";
         mysqli_query($link, $sql);
         
-        header('Location: http://localhost/crud-php/');
+        header('Location: ../');
       
     }
 ?>

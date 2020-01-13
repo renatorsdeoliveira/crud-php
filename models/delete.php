@@ -13,7 +13,7 @@
     $resultado_id = mysqli_query($link, $sql);
 
     if(mysqli_affected_rows($link)){
-        header('Location: http://localhost/crud-php/');
+        header('Location: ../');
     }else{
         echo 'não apagado';
     }

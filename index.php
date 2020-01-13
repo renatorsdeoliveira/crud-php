@@ -3,7 +3,6 @@
     $erro_email = isset($_GET['email_erro']) ? $_GET['email_erro'] : 0;
     include_once('conteudo-fixo/header.php'); 
     include_once('models/listagem.php'); 
-    
 ?>
 
     <div class="conteudo">
